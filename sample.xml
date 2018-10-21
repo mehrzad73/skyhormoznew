@@ -1,0 +1,106 @@
+<Order transactionId="432350200200486">
+  <CreateSubscription
+    iccid="89984320001812741809"
+    imsi="432350200200486"
+    cardProfile="MTNGTO_50403"
+    initialState="INACTIVE">
+    <Ota-security>
+      <MBCard
+        serialNumber="89984320001812741809"
+        transportKey="1"
+        algoName="TripleDES_ECB">
+        <SecurityDomain
+          securityDomainID="A00000015154410000000000B2021000"
+          defaultSyncID="default"
+          implicitRcAlgoNumber="6"
+          proprietaryRcAlgoNumber="6">
+          <Sync value="0000000000"/>
+          <Keyset
+            versionNumber="1"
+            syncID="MNOTSM_KeySet1">
+            <Sync value="0000000001"/>
+            <Kic value="FE1B20832DE89B627AA1E4E5FCD7B806" algoNumber="3"/>
+            <Kid value="FE1B20832DE89B627AA1E4E5FCD7B806" algoNumber="3"/>
+            <Kik value="FE1B20832DE89B627AA1E4E5FCD7B806" algoNumber="3"/>
+          </Keyset>
+          <Keyset versionNumber="70">
+            <Key index="1">
+              <KeyComponent
+                value="1B0FDEE440B0B80E58D7EA0B429EFDB5"
+                type="3"
+                onCard="true"/>
+            </Key>
+          </Keyset>
+          <Keyset versionNumber="71">
+            <Key index="1">
+              <KeyComponent
+                value="5BFBE7ADE91DF3B23C60D50CCBB78D23"
+                type="3"
+                onCard="true"/>
+            </Key>
+          </Keyset>
+        </SecurityDomain>
+      </MBCard>
+    </Ota-security>
+    <Sekms-data>
+    <![CDATA[
+    <gsepml:ExecuteProvisioningBatch
+    xmlns:gsepml="http://www.gemalto.com/gsepml/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="1.1.2.1" timestamp="2017-12-28T14:30:37Z">
+      <gsepml:BatchInfo>
+        <gsepml:SupplierID>GEMALTO</gsepml:SupplierID>
+        <gsepml:CustomerID>MIA</gsepml:CustomerID>
+        <gsepml:OrderID>16976</gsepml:OrderID>
+        <gsepml:WorkOrderID>16976</gsepml:WorkOrderID>
+        <gsepml:BatchID>16976</gsepml:BatchID>
+        <gsepml:MessageIndex>1-1</gsepml:MessageIndex>
+        <gsepml:Quantity>12000</gsepml:Quantity>
+        <gsepml:ProductionPlant>SAIT</gsepml:ProductionPlant>
+      </gsepml:BatchInfo>
+      <gsepml:KeyDerivationProfile>
+        <gsepml:ID>MTNGTO_50403</gsepml:ID>
+        <gsepml:SD>
+          <gsepml:Label>SSD</gsepml:Label>
+          <gsepml:Aid>A00000015154410000000000B2021000</gsepml:Aid>
+          <gsepml:KeySetDerived>
+            <gsepml:Version>64</gsepml:Version>
+            <gsepml:DerivationAlgoLabel>HKDF</gsepml:DerivationAlgoLabel>
+            <gsepml:Key kcv="3B2EDA">
+              <gsepml:Index>1</gsepml:Index>
+              <gsepml:KeyComponent type="85" mk-label="MIA.LIVE.TSMPSK.PSKD.01"/>
+            </gsepml:Key>
+            <gsepml:Key kcv="A79627">
+              <gsepml:Index>2</gsepml:Index>
+              <gsepml:KeyComponent type="88" mk-label="MIA.LIVE.TSMDEK.AMICCKD.01"/>
+            </gsepml:Key>
+          </gsepml:KeySetDerived>
+        </gsepml:SD>
+      </gsepml:KeyDerivationProfile>
+      <gsepml:ProfileUICC>
+        <gsepml:ID>MTNGTO_50403</gsepml:ID>
+        <gsepml:Version>1.0.0</gsepml:Version>
+        <gsepml:CustomerTrigram>MIA</gsepml:CustomerTrigram>
+      </gsepml:ProfileUICC>
+      <gsepml:Provision_UICC>
+        <gsepml:UICC>
+          <gsepml:iccid>89984320001812741809</gsepml:iccid>
+          <gsepml:imsi>432350200200486</gsepml:imsi>
+          <gsepml:state>SECURED</gsepml:state>
+          <gsepml:SD>
+            <gsepml:Label>TSMSD</gsepml:Label>
+            <gsepml:Aid>A00000015154410000000000B2021000</gsepml:Aid>
+            <gsepml:In>4D544E495F47544F5F34302E3030</gsepml:In>
+            <gsepml:Ein>89984320001812741809</gsepml:Ein>
+            <gsepml:KeySetDerived>
+              <gsepml:Version>64</gsepml:Version>
+              <gsepml:custom-data key="XTS_IND1" value="539031DD92B5BEE85E6A86FCDB8862A1"/>
+              <gsepml:custom-data key="XTS_IND2" value="6F9F9F330DD4BB765C64726129D7BB62"/>
+            </gsepml:KeySetDerived>
+          </gsepml:SD>
+        </gsepml:UICC>
+      </gsepml:Provision_UICC>
+    </gsepml:ExecuteProvisioningBatch>]]>
+  </Sekms-data>
+  </CreateSubscription>
+</Order>
