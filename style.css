@@ -625,7 +625,7 @@ a:hover, a:active {
 	display:block;
 		padding-left:14.5px;
 	padding-right:14.5;
-	text-shadow: 3px 3px skyblue;
+	
 }
 .entry-title{
 	text-align:center;
@@ -645,6 +645,7 @@ a:hover, a:active {
 	color:#585959;
 }
 .to-do{
+	margin-left:10px;
 	text-align:justify;
 	color:black;
 }
@@ -656,6 +657,10 @@ text-align:justify;
 .topic{
 	color:black;
 	text-align:justify;	
+	margin-left:10px;
+}
+.inclusion:hover{
+	background-color:#add8e659;
 }
 .inclusion{
 	border-style:outset;
@@ -666,6 +671,9 @@ text-align:justify;
     margin-left: 80px;
     background-color: lightblue;
 }
+.whattoapply:hover{
+	background-color:#add8e659;
+}
 .whattoapply{
 border: 1px solid black;
     margin-top: 20px;
@@ -673,6 +681,10 @@ border: 1px solid black;
     margin-right: 100px;
     margin-left: 80px;
     background-color: lightblue;
+	
+}
+.notepack:hover{
+	background-color:#add8e659;
 }
 .notepack{
 	border: 1px solid black;
@@ -682,7 +694,9 @@ border: 1px solid black;
     margin-left: 80px;
     background-color: lightblue;
 }
+
 .note{
+	
 	text-decoration: underline;
 }
 /*--------------------------------------------------------------
