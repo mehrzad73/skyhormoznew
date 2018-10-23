@@ -48,6 +48,24 @@
 </head>
 
 <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+        <script>
+            window.onscroll=function(){
+                scrollFunction()
+                };
+                function scrollFunction(){
+                    if(document.body.scrollTop>20 || document.documentElement.scrollTop > 20){
+                        document.getElementById("myBtn").style.display="block";
+                    }
+                    else{
+                        document.getElementById("myBtn").style.display="none";
+                    }
+                }
+                function topFunction(){
+                    document.body.scrollTop=0;
+                    document.documentElement.scrollTop=0;
+                }
+        </script>
     <div class="outer-container">
         <header class="site-header">
             <div class="top-header-bar">
@@ -124,13 +142,15 @@
                 </div><!-- .row -->
             </div><!-- .container -->
         </header><!-- .site-header -->
-
+      
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <div class="swiper-container hero-slider">
+                            
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
+                               
                                 <div class="hero-content flex justify-content-center align-items-center flex-column">
                                     <img src="images/ARMENIA.jpg" alt="">
                                 </div><!-- .hero-content -->
@@ -151,6 +171,7 @@
 
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
+                        
 
                         <!-- Add Arrows -->
                         <div class="swiper-button-next flex justify-content-center align-items-center">
@@ -486,7 +507,13 @@
     <script type='text/javascript' src='js/jquery.js'></script>
     <script type='text/javascript' src='js/swiper.min.js'></script>
     <script type='text/javascript' src='js/custom.js'></script>
-
+    <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                autoplay: {
+                  delay: 2000,
+                },
+              });
+            </script>
 </body>
 
 </html>
