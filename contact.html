@@ -337,6 +337,30 @@
 	<script type='text/javascript' src='js/jquery.js'></script>
 	<script type='text/javascript' src='js/swiper.min.js'></script>
 	<script type='text/javascript' src='js/custom.js'></script>
-
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 </html>
+<script>
+        window.onscroll=function(){
+            scrollFunction()
+            };
+            function scrollFunction(){
+                if(document.body.scrollTop>20 || document.documentElement.scrollTop > 20){
+                    document.getElementById("myBtn").style.display="block";
+                }
+                else{
+                    document.getElementById("myBtn").style.display="none";
+                }
+            }
+            function topFunction(){
+                document.body.scrollTop=0;
+                document.documentElement.scrollTop=0;
+            }
+    </script>
+   <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                autoplay: {
+                  delay: 3000,
+                },
+              });
+            </script>
