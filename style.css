@@ -104,6 +104,9 @@ a:hover, a:active {
 /*
 # Header Bar Email
 --------------------------------*/
+.header-bar-email:hover{
+	background-color:skyblue;
+}
 .header-bar-email a {
     color: #afafaf;
 }
@@ -614,7 +617,7 @@ a:hover, a:active {
 	display:none;
 	position:fixed;
 	bottom:20px;
-	right:30px;
+	left:30px;
 	z-index:99;
 	font-size:18px;
 	border:none;
