@@ -104,9 +104,8 @@ a:hover, a:active {
 /*
 # Header Bar Email
 --------------------------------*/
-.header-bar-email:hover{
-	background-color:skyblue;
-}
+
+
 .header-bar-email a {
     color: #afafaf;
 }
@@ -272,6 +271,29 @@ a:hover, a:active {
     top: 18px;
     width: 0;
     left: 50%;
+}
+/*---------------------------------
+price tag-image
+-----------------------------------*/
+.content-wrap{
+    display: block;
+    border:black;
+}
+.image-container{
+    position:relative;
+    
+}
+.normal-price{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.tour-price-has-discount{
+    position:absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 20px;
+    background:#FF4A52;
+    
 }
 
 /*
